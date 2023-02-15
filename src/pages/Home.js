@@ -11,7 +11,7 @@ const Home = () => {
     const {user} = useAuthContext()
     useEffect(() => {
         const fetchWorkout = async () => {
-            const response = await fetch('https://backend-workout.up.railway.app/api/workouts',{
+            const response = await fetch('/api/workouts',{
                 headers: {
                     'Authorization': `Bearer ${user.token}`
                 }
